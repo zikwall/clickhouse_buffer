@@ -20,4 +20,3 @@ serde = { version = "1.0.106", features = ["derive"] }
 [dev-dependencies]
 clickhouse = { version = "0.7", features = ["test-util"] }
 actix-rt = "*"
-serde = { version = "1.0.106", features = ["derive"] }
