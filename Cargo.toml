@@ -1,0 +1,23 @@
+[package]
+name = "clickhouse_buffer"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "clickhouse_buffer"
+path = "src/lib/lib.rs"
+
+[[bin]]
+name = "clickhouse_buffer_bin"
+path = "src/bin/bin.rs"
+
+[dependencies]
+clickhouse = "0.7"
+serde = { version = "1.0.106", features = ["derive"] }
+
+[dev-dependencies]
+clickhouse = { version = "0.7", features = ["test-util"] }
+actix-rt = "*"
+serde = { version = "1.0.106", features = ["derive"] }
